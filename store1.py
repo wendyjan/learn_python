@@ -10,4 +10,16 @@ class Store:
 
     def __init__(self, newName):
 
-        self.name = newNames
+        self.name = newName
+
+        self.items = []
+
+    def addItem(self, item, cost):
+
+        newPair = [item, cost]
+
+        self.items.append(newPair)
+
+    def getAllItems(self):
+
+        return self.itemss
