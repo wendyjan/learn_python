@@ -22,4 +22,4 @@ class Store:
 
     def getAllItems(self):
 
-        return self.itemss
+        return self.items
