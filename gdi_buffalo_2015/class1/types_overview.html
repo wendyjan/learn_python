@@ -27,9 +27,10 @@
       <h3>Python types include:</h3>
       
       
-      <script src="http://gist-it.appspot.com/https://github.com/wendyjan/learn_python/tree/master/gdi_buffalo_2015/class1/Types_overview.py?slice=1:2"></script>
       
-      <table>
+      
+      
+      <table border = "1" style = "width:100%">
         <tr>
           <td>int</td>
           <td>integer</td>
@@ -40,21 +41,57 @@
           <td>floating point number</td>
           <td>3.14, 8.000009, 5.0</td>
         </tr>
+        <tr>
+          <td>str</td>
+          <td>character string</td>
+          <td>"Lee", 'red', "2000"</td>
+        </tr>
+        <tr>
+          <td>bool</td>
+          <td>boolean</td>
+          <td>True, False, 0, 1</td>
+        </tr>
+        <tr>
+          <td>list</td>
+          <td>list of items</td>
+          <td>[2.0, "girl", 4, 4, x]</td>
+        </tr>
+        <tr>
+          <td>dict</td>
+          <td>dictionary</td>
+          <td>{"turtles":3, "dog":1, "cat":1}</td>
+        </tr>
+        <tr>
+          <td>file</td>
+          <td>file</td>
+          <td>Desktop/researchpaper.doc</td>
+        </tr>
+        <tr>
+          <td>tuple</td>
+          <td>tuple</td>
+          <td>(1,3,1), ("a","b","c")</td>
+        </tr>
+        <tr>
+          <td>set</td>
+          <td>set</td>
+          <td>{"this", "that"}</td>
+        </tr>
       </table>
-      
-    <h3>Other types</h3>
+      </br>
+    <h4>Other types</h4>
+    
     Other numeric types include Decimal, Fraction, Binarys, Complex.
 Classes are like a user-created Type, so the types in the table are referred to as “Built-in” types.
 
-<h3>Type declaration</h3>
+<h4>Type declaration</h4>
 In some languages, when you create a variable, you need to tell the computer what type it is, for example
 
-In Java
-char a = “b”
+<p>In Java</br>
+char a = “b”</p>
 
-In C++
-int a
-a = 5
+<p>In C++</br>
+int a</br>
+a = 5</p>
 
 In Python, we don’t need to declare a type. Python decides implicitly what the type is.
 
@@ -64,13 +101,13 @@ So what are the type functions listed above used for?
 We may want to change the type of an object.
 
 Try it. At the interactive prompt, enter 
-<script src="http://gist-it.appspot.com/https://github.com/wendyjan/learn_python/tree/master/gdi_buffalo_2015/class1/Types_overview.py?slice=1:2"></script>
+<script src="http://gist-it.appspot.com/https://github.com/wendyjan/learn_python/tree/master/gdi_buffalo_2015/class1/Types_overview.py?slice=0:2"></script>
 
 What type do you think Python thinks x is?
 To find out, try
-<script src="http://gist-it.appspot.com/https://github.com/wendyjan/learn_python/tree/master/gdi_buffalo_2015/class1/Types_overview.py?slice=1:2"></script>
+<script src="http://gist-it.appspot.com/https://github.com/wendyjan/learn_python/tree/master/gdi_buffalo_2015/class1/Types_overview.py?slice=3:4"></script>
 You can change the type of x by typing the function(x). Try
-<script src="http://gist-it.appspot.com/https://github.com/wendyjan/learn_python/tree/master/gdi_buffalo_2015/class1/Types_overview.py?slice=1:2"></script>
+<script src="http://gist-it.appspot.com/https://github.com/wendyjan/learn_python/tree/master/gdi_buffalo_2015/class1/Types_overview.py?slice=5:8"></script>
 What other types does Python allow you to change  x to? Try some.
 
 
@@ -79,8 +116,9 @@ because each type has different behaviors; that is each type comes with specific
 
 Try
 
-<script src="http://gist-it.appspot.com/https://github.com/wendyjan/learn_python/tree/master/gdi_buffalo_2015/class1/Types_overview.py?slice=1:2"></script>
+<script src="http://gist-it.appspot.com/https://github.com/wendyjan/learn_python/tree/master/gdi_buffalo_2015/class1/Types_overview.py?slice=9:11"></script>
 <h3>Some operators and functions are type specific</h3>
+<pre>
 integers and floats
   standard math operators like +, *, /
   
@@ -90,16 +128,20 @@ strings
 files
   open(), read()
   
+  </pre>
 <h3>Many operations and functions are shared by several types</h3>
 Try
-<script src="http://gist-it.appspot.com/https://github.com/wendyjan/learn_python/tree/master/gdi_buffalo_2015/class1/Types_overview.py?slice=1:2"></script>
-<h3>Sequences</h3>
+<script src="http://gist-it.appspot.com/https://github.com/wendyjan/learn_python/tree/master/gdi_buffalo_2015/class1/Types_overview.py?slice=12:14"></script>
+Try
+
+<script src="http://gist-it.appspot.com/https://github.com/wendyjan/learn_python/tree/master/gdi_buffalo_2015/class1/Types_overview.py?slice=15:17"></script>
+<h4>Sequences</h4>
 Several types are called sequences because they have a positional ordering:
 lists, strings, tuples
 So they share slicing and indexing methods like the one above. 
 Compare this to dicts and sets where order doesn't matter.
 
-<h3>Mutables</h3>
+<h4>Mutables</h4>
 Several types are referred to as mutable.
 This means that you can change them in place:
 lists, dicts, sets
@@ -108,13 +150,13 @@ They share methods like append and sort.
 
 try:
 
-<script src="http://gist-it.appspot.com/https://github.com/wendyjan/learn_python/tree/master/gdi_buffalo_2015/class1/Types_overview.py?slice=1:2"></script>
+<script src="http://gist-it.appspot.com/https://github.com/wendyjan/learn_python/tree/master/gdi_buffalo_2015/class1/Types_overview.py?slice=18:23"></script>
 
-<h3>Immutable</h3>
+<h4>Immutable</h4>
 Other types cannot change in place, but can be overwritten or replaced:
 all numbers, bools, strings, tuples
 It is a subtle difference.
-<script src="http://gist-it.appspot.com/https://github.com/wendyjan/learn_python/tree/master/gdi_buffalo_2015/class1/Types_overview.py?slice=1:2"></script>
+<script src="http://gist-it.appspot.com/https://github.com/wendyjan/learn_python/tree/master/gdi_buffalo_2015/class1/Types_overview.py?slice=24:32"></script>
 
 <h2>PyPet</h2>
 Let's make a PyPet (remember Tomagachis?)
