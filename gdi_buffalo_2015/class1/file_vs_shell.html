@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en-us">
+
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+
+    <!-- Enable responsiveness on mobile devices-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+
+    <title>Shell vs File</title>
+
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
+  </head>
+
+
+  <body>
+
+    <div class="container">
+      <div class="jumbotron">
+        <h2>Differences Between the Shell and a File</h2>
+        </div> <!-- end of jumbotron -->
+    </div> <!-- end of container for jumbotron-->
+    <div class="container">
+      <br><h3>Demo of the Shell</h3>
+        <br><p><i>How do I get to the shell?</i>
+        <br><br>We'll use a program called IDLE. It comes with Python.
+        <br>To run IDLE, open the command line and type IDLE.
+        <br>For Windows, hit the Windows key, type "cmd", and hit enter.
+        <br>For Mac, open the Terminal application in your Applications Folder.
+        </p>
+        <img src="img/shell1.png" alt="Empty Python Shell in IDLE">
+        <p>Here's what IDLE's Python shell looks like.
+          You should see this open on your own computer.
+        <br>There are other applications to use the shell besides IDLE,
+        but for now we'll use IDLE.
+        <hr>
+
+        <br><p><i>What do I do with the shell?</i>
+        <br><br>The shell interacts directly with Python.
+        You type one instruction, Python executes that one instruction.
+        Things go back and forth, one at a time. You, Python. You, Python.
+        <br> Try typing a math expression.
+        </p>
+        <img src="img/shell2.png" alt="Python shell with math expression 4 + 10">
+        <p>You should see Python execute the math expression and print out the result.
+        <br><br>Now try out the "print" statement.
+        </p>
+        <img src="img/shell3.png" alt="Python shell with print 'Hello World' statement">
+        <p>Python will echo back whatever you asked it to print.
+        <br>If you got a red error, try again and make sure that your quotation marks are placed exactly like mine.
+        <br><br>What if we remove the word "print" from our instruction?
+        </p>
+        <img src="img/shell4.png" alt='Python shell with only "Wendy", without print statement'>
+        <p>Python will echo back whatever you typed.
+        But notice the difference between this response and our previous instruction with the word "print".
+        <br>Learning to write code well involves noticing differences between two approaches, no matter how small they are.
+        What might look like a tiny difference to a new eye could be a really big difference.
+        <br>We'll return to these two instructions and the difference between them soon.
+        <br><br>Now make your first variable.
+        </p>
+        <img src="img/shell5.png" alt='Python shell with "x = 'Wendy'" instruction'>
+        <p>We've assigned x to hold the value of "Wendy".
+        <br><br>And let's print out x.
+        </p>
+        <img src="img/shell6.png" alt='Python shell with "print x" instruction'>
+        <p>This is what you should see-- or whatever you assigned to x instead of "Wendy"!
+        <br>So enough of the shell, let's take a look at a file now instead.
+    </div> <!-- end of container for shell demo -->
+
+    <div class="container">
+      <br><h3>Demo of a File</h3>
+
+        <br><p><i>How do I get to a file?</i>
+        <br><br>In IDLE's menu, go to "File" -> "New File".
+        <br>Now you should just see a blank file, without the triple carrot ">>>" that showed up on the next line of the shell.
+        <br><p><i>What do I do with the file?</i>
+        <br>Type a single instruction in the file and save it.
+        I used the name "firstFile.py", and my single instruction is shown in the code sample below.
+        Make sure to get the ".py" extension.
+        I usually save to the desktop when I'm testing something like this.
+        <script src="http://gist-it.appspot.com/https://github.com/wendyjan/learn_python/tree/master/gdi_buffalo_2015/class1/firstFile.py?slice=9:10"></script>
+        For now, don't worry about the line that says "This Gist brought to you by gist-it" in the code sample above.
+        Don't type it out. Your file should only have one line, to print the word "hi".
+        <br><br>Now, in the IDLE menu, click "Run" -> "Run Module".
+        </p>
+        <img src="img/shellFromFile1.png" alt='Python shell prints out the results of running the file. File content was just to print "hi"'>
+        <p>Your file will run, and any "print" instruction will print to the shell window.
+        <br>Now try adding a few more lines to your file.
+        <script src="http://gist-it.appspot.com/https://github.com/wendyjan/learn_python/tree/master/gdi_buffalo_2015/class1/firstFile.py?slice=10:12"></script>
+        Now run the file again-- what is the output?
+        </p>
+        <img src="img/shellFromFile2.png" alt='Python shell prints out the results of running the file. Only the words "hi" and "bye" are printed in the shell'>
+        <p>This is the new file output in the shell.
+        <br>So only the lines with the word "print" actually printed out to the shell. The line with just the word "Wendy" did not print.
+        This is a key difference, that was not nearly as obvious when our code was in the shell.
+        We won't dwell on it for now-- it's enough to know that you need to include the word "print" each time we want output from running a file.
+
+    </div> <!-- end of container for file demo -->
+
+    <div class="container">
+      <h3>Key Differences</h3>
+        <p>
+        So now you've run some Python code in the shell and in a file.
+        The key differences:
+        <ul>
+          <li>The shell goes back and forth, one line at a time, like a conversation.</li>
+          <li>A file allows you to type multiple instructions and then run them all at the same time.</li>
+          <li>Some of the output that you see when typing at the shell is not visible when the same code is run from a file.</li>
+        </ul>
+        <br>It helps to think of the shell as a conversation,
+        where you get a lot of feedback right away about how your words are received, but you can only express your ideas in small chunks.
+        A file is more like an essay, where you can get out a lot of related ideas but you won't know how the reader responds until the essay is complete.
+        <br><br>
+        <br>That's the end of our discussion on the shell versus a file.
+        Feel free to go to those code samples and click the blue words "This Gist" below each one.
+        You'll see my file hosted on github.com and learn a bit more about commenting code when you do!
+        <br><br>
+        </p>
+    </div> <!-- end of container for file vs shell comparison -->
+
+  </body>
+</html>

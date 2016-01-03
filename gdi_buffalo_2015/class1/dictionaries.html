@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en-us">
+
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+
+    <!-- Enable responsiveness on mobile devices-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+
+    <title>Dictionaries in Python</title>
+
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
+  </head>
+
+
+  <body>
+
+    <div class="container">
+      <div class="jumbotron">
+        <h2>Dictionaries in Python</h2>
+        </div> <!-- end of jumbotron -->
+    </div> <!-- end of container for jumbotron-->
+    <div class="container">
+      <h3>Some Examples</h3>
+      <p><i>Click the blue "This Gist" link at the bottom left of each example to see the source code on my Github account.</i>
+
+      <br><br>Here's a small dictionary.
+      </p>
+      <script src="http://gist-it.appspot.com/https://github.com/wendyjan/learn_python/tree/master/gdi_buffalo_2015/class1/dictionaries.py?slice=9:11"></script>
+      <p>Notice the syntax: there are colons between each pair of items.
+      In a dictionary, everything is stored in a pair.
+      <br>But a dictionary is more than just pairs of items-- the first member of the pair is a "key", and the second is a "value".
+      We can look up any value in the dictionary using its key. We can also add a new key-value pair.
+      </p>
+      <script src="http://gist-it.appspot.com/https://github.com/wendyjan/learn_python/tree/master/gdi_buffalo_2015/class1/dictionaries.py?slice=9:11"></script>
+      <p>Just like we used a bracket to select a single ordered element from a list, we use a bracket to select a single value for a key, or store a new value for a key.
+      <br>This means that the keys must be unique! We can't have two "Joe" keys in the same dictionary with different values. Try out the code below:
+      <p>
+      <script src="http://gist-it.appspot.com/https://github.com/wendyjan/learn_python/tree/master/gdi_buffalo_2015/class1/dictionaries.py?slice=9:11"></script>
+      <p> If we try to put in two "Joe" keys with different values, the first value will just be replaced by the second value.
+      <br>And what if we ask for the value of a key we haven't put in yet?
+      </p>
+      <script src="http://gist-it.appspot.com/https://github.com/wendyjan/learn_python/tree/master/gdi_buffalo_2015/class1/dictionaries.py?slice=9:11"></script>
+      <p>An error is thrown.
+      <br><br>
+      Now let's return to our PyPet example, and store all of that information in a single dictionary.
+      </p>
+      <script src="http://gist-it.appspot.com/https://github.com/wendyjan/learn_python/tree/master/gdi_buffalo_2015/class1/dictionaries.py?slice=9:11"></script>
+      <p>We can describe our entire PyPet using a dictionary.
+      <br>We can also print out the dictionary that describes Monty very easily:
+      </p>
+      <script src="http://gist-it.appspot.com/https://github.com/wendyjan/learn_python/tree/master/gdi_buffalo_2015/class1/dictionaries.py?slice=9:11"></script>
+      <p>The letter 'k' is a temporary variable. It exists only inside the for loop, and lets us iterate through all the keys in the dictionary for our PyPet.
+      We got the keys by calling "monty.keys()".
+      Notice that we can't control the order of iteration.
+    </div> <!-- end of container for sample code -->
+
+  </body>
+</html>
