@@ -19,4 +19,3 @@ if __name__ == "__main__":
         ted.forward(50)
         ted.right(90)
     turtle.done()
-# can I edit
