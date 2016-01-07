@@ -10,8 +10,8 @@ if __name__ == "__main__":
     print my_dict
 
     print my_dict["Joe"]
-    my_dict["Dave"] = "Wu"
-    print my_dict["Dave"]
+    my_dict["Clara"] = "Wu"
+    print my_dict["Clara"]
 
     my_dict["Joe"] = "Forester"
     print my_dict["Joe"]
