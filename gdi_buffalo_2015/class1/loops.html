@@ -1,0 +1,205 @@
+<h3>Loops</h3>
+
+Loops allow us to repeat a procedure 
+
+Some looping (and related) reserved words in Python:
+
+for
+in
+while
+break
+continue
+else
+range
+enumerate
+
+
+for is useful for doing something to or with each item in a list or other iterable.
+
+Try 
+dogs = [‘Rover’, ‘Max’, ‘Holly’]
+
+for dog in dogs:
+	dog = dog + ‘\’s’
+	print dog
+Try 
+for letter in “word”:
+	print letter + “uba”
+
+Try 
+ages_later = []
+years = 10
+ages = [12, 15, 17]
+for age in ages:
+	age +=years
+	ages_later.append(age)
+print ages_later
+
+
+range is useful for number sequences
+
+Try
+range(5)
+
+Try
+for x in range(5):
+	print x**2
+
+Try
+ages_later = []
+years = 10
+
+for age in range(12,18):
+	age +=years
+	ages_later.append(age)
+print ages_later
+
+
+back to dogs, repeat code and this time add
+print dogs
+notice that the original list has not changed. We only temporarily changed each dog.
+
+Most of the time we iterate through a list by items, like dogs. Sometimes it is useful to iterate by the index of each item. Each item in a list has a corresponding index number, starting with 0.
+
+Here is code that would change each dog in the list.
+
+dogs = [‘Rover’, ‘Holly’]
+for i in range(len(dogs)):
+	dogs[i] = dogs[i] + ‘\’s’
+print dogs
+
+This code uses range and len to shuffle a group of items.
+cards = [‘ace’, 2,3,4,’queen’]
+for i in range(len(cards)):
+	cards = cards[i:] + cards[:i]
+	print cards
+
+Most of the time, it is better and more “Pythonic” to use for without indexing.
+multiples_of_two_and_three = []
+for x in range(100):
+	if x%2 == 0 and x%3==0:
+		multiples_of_two_and_three.append(x)
+
+print multiples_of_two_and_three
+
+Another useful function within for loops is enumerate(list), which creates a list of tuples of indices and elements from a given list.
+
+Try
+for i, day in enumerate([Mon, Tue, Wed, Thurs, Fri]):
+	print i, day
+
+
+While loops
+
+
+Different from for because it will continue to loop until some condition is met, indefinite number of repetitions
+
+Pypet with while  loops
+
+food = 0
+while food < 5:
+
+hungry = raw_input(“Are you hungry? Type Y or N ”)
+if hungry == “Y”:
+		print “Here is a treat for you.”
+		food += 1
+
+print “I feel full”
+
+#Then add break for else within loop.
+
+#Then add else for while loop with print i feel full.
+
+food = 0
+
+while food < 5:
+
+	hungry = raw_input('Are you hungry? Type Y or N ')
+
+	if hungry == 'Y':
+		print 'Here is a treat for you.'
+		food += 1
+	else:
+		break
+
+else:
+	print "I sure was hungry!"
+print 'Now what?'
+
+
+
+
+Control Flow with while
+	break will break out of the loop and go to the next statement outside of the loop without executing anything else within the loop.
+	continue will return to the top of the loop.
+	else will execute if the loop condition fails. Gets skipped if there is a break.
+
+dogs = [‘Holly’, ‘Max’, ‘Sadie’, ‘Joey’]
+while dogs:					#unempty lists have the boolean value of True
+	print dogs.pop(0) + “ barks.”		# pop gets an item AND removes it from the list
+	print dogs
+
+Change so that if the dog is Sadie, it doesn’t bark, but does keep going with the loop.
+dogs = ['Holly','Max','Sadie','Joey']
+i = 0
+while len(dogs) > 1:
+	if dogs[i] == 'Sadie':
+		i=1
+		continue
+	print dogs.pop(i) + " barks"
+	print dogs
+
+
+What does this program do?
+x = 10
+while x:			#remember x has the boolean value of True
+	x = x-1
+	if x % 2 != 0:
+		continue
+	print x
+
+
+	
+
+Watch out for infinite loops
+
+DO NOT TYPE THIS
+
+x = 11
+while x > 10:
+	print “uh oh”
+
+DO NOT TYPE THIS
+
+while True:
+	print “uh oh”
+
+To prevent infinite loops, there should be a condition in the while statement that will eventually be met OR there should be a break, usually in conjunction with if/then
+
+Nested Loops
+
+Try 
+dogs = [‘Rover’, ‘Max’, ‘Holly’]
+toys = [‘bone’, ‘squirrel’]
+for dog in dogs:
+	for toy in toys:
+		print ‘That is ‘ + dog + ‘\’s ’ + toy + ‘.’
+	
+Other options for formatting the string
+	print “That is %s\’s %s.” % (dog,toy)
+
+Try this program to search the first list for items in the second list
+
+items = [“aaa”, 111, (4,5), 2.01]
+tests = [(4,5), 3.14]
+
+for thing in tests:
+	for item in items:
+		if item == thing:
+			print thing + “was found”
+
+		else:
+			print thing + “was not found”
+
+	
+
