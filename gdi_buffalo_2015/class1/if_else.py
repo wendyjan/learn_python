@@ -7,7 +7,7 @@ else:
 	print “okay”
 
 pigs = “fly”
-if pigs = “fly”:
+if pigs == “fly”:
 print “This prints.”
 else:
 print “This does not print.”	
