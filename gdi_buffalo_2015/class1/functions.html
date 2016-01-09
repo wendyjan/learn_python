@@ -1,0 +1,114 @@
+Functions 
+
+Some analogies
+
+outsourcing a job (sometimes with parameters, sometimes a returned item sometimes not)
+example: advertising, paychecks, photocopying
+
+using a tool (emphasize repeated need and reusability, making the tool)
+example: scissors in my purse, tool for getting star on tree - if it works for other tall things even better
+
+statements and expressions you’ll use
+
+def
+defines a new function
+return
+used inside a function definition at the end if there is something to be returned to the function
+call expression
+myfunc()  or whatever you name your function, with or without parameters
+lambda
+for a quick generic function, that is you don’t name it and you define it within your code
+global, nonlocal
+related to scope
+yield
+used in place of return when you want to return an iterable one item at a time
+
+Example
+def credits():
+	print “This example was borrowed from \’Learning Python\’ by Mark Lutz.”
+
+In main program, anytime I want to give credit to Mark Lutz, I would type:
+
+credits()
+	
+
+
+Example
+def tip(percentage, total):
+	return round(percentage * total/100,2)
+
+Try 
+tip(15,24.50)
+
+Try
+print tip(15,24.50)
+
+
+Here is  a program that computes a tip when the user inputs bill and percentage
+bill = raw_ input(“What did your bill come to?”)
+
+p = raw_input(“What percentage would you like to use for the tip?”)
+
+print ‘tip is’ tip(float(p), float(bill))
+
+#I use the function in a different program that simulates a wait staff tip for an average evening with 8 customers
+
+total_tips = 0
+for transaction in range(8):
+	# random amount from bills
+	total = float(randrange(2000,4000)/100)
+	tip_percent = float(randrange(15,20))
+	total_tips += tip(tip_percent, total)
+print total_tips
+
+Add print statements to convince yourself that the program is working.
+
+
+
+Function Notes
+
+Functions involve stand alone definitions AND calls to a function within a program or several programs. (mention turtle functions)
+A function is defined using def, the name you choose, and () with or without parameters for input.
+The function may or may not end with a return statement.
+The functions would precede the main program if you have them in one file.
+Variables that you define as parameters for your function don’t have to have the same name as the parameters that you send to the function. Variables in our examples are matched by position.
+
+
+#I define the function
+def salutation(person, gender):
+	if gender = “female” or gender == “f”:
+		print “Ms. “ + person
+	else:
+		print “Mr. “ + person
+	
+
+#I use the function in my program
+team = {‘Izydorczak’:”female”, ‘Jansson’:”female”, ‘Ryan’’:”male”]
+for member in team:
+	print “Hi “
+	salutation(member, team[member])
+
+A function for our Pypet
+
+#PyPet happy expressions function - random happy expressions
+def express_happy():
+	say_options =[“I love you!”, “Hip hip hurray!”, “Purr, Purr, I’m happy!”]
+	print random.choice(say_options)
+
+# in a program
+import random
+
+hungry = random.randint(0,10)
+if hungry < 5:
+	print “Hungry”
+else:
+	express_happy()
+
+Example with parameter but no return
+import random
+def express_happy(owner):
+	say_options = [“I love you “ + owner + “!”, “Hip hip hurray!”]
+	print random.choice(say_options)
+
+
+What other functions might we have for our pets?
