@@ -31,6 +31,13 @@ example: advertising, paychecks, photocopying</p>
 <p>using a tool (emphasize repeated need and reusability, making the tool)
 example: scissors in my purse, tool for getting star on tree - if it works for other tall things even better</p>
 
+<h4>Terminology</h4>
+Defining a function means that you are making your tool.
+Calling a function means you are ready to use it.
+Parameters are the variables that you specify for your function, for example things you give to your scissors, or advertiser. 
+Return is what they give back to you.
+There doesn't necessarily have to be either or both. (example flashlight, 
+
 <h3>statements and expressions you’ll use</h3>
 <table border = "1" style = "width:100%">
 <tr>
@@ -50,42 +57,22 @@ example: scissors in my purse, tool for getting star on tree - if it works for o
 Example
 <script src="http://gist-it.appspot.com/https://github.com/wendyjan/learn_python/tree/master/gdi_buffalo_2015/class1/functions.py?slice=0:2"></script>
 
-def credits():
-	print “This example was borrowed from \’Learning Python\’ by Mark Lutz.”
-
 In main program, anytime I want to give credit to Mark Lutz, I would type:
 <script src="http://gist-it.appspot.com/https://github.com/wendyjan/learn_python/tree/master/gdi_buffalo_2015/class1/functions.py?slice=3:4"></script>
-credits()
-	
-Example
+
+Another example
 <script src="http://gist-it.appspot.com/https://github.com/wendyjan/learn_python/tree/master/gdi_buffalo_2015/class1/functions.py?slice=5:7"></script>
-def tip(percentage, total):
-	return round(percentage * total/100,2)
 
 Try <script src="http://gist-it.appspot.com/https://github.com/wendyjan/learn_python/tree/master/gdi_buffalo_2015/class1/functions.py?slice=8:9"></script>
 
-tip(15,24.50)
-
 Try
 <script src="http://gist-it.appspot.com/https://github.com/wendyjan/learn_python/tree/master/gdi_buffalo_2015/class1/functions.py?slice=10:11"></script>
-print tip(15,24.50)
-
 
 Here is  a program that computes a tip when the user inputs bill and percentage
 <script src="http://gist-it.appspot.com/https://github.com/wendyjan/learn_python/tree/master/gdi_buffalo_2015/class1/functions.py?slice=12:15"></script>
-bill = raw_ input(“What did your bill come to?”)
-p = raw_input(“What percentage would you like to use for the tip?”)
-print ‘tip is’ tip(float(p), float(bill))
 
 I use the function in a different program that simulates a wait staff tip for an average evening with 8 customers
 <script src="http://gist-it.appspot.com/https://github.com/wendyjan/learn_python/tree/master/gdi_buffalo_2015/class1/functions.py?slice=16:23"></script>
-total_tips = 0
-for transaction in range(8):
-	# random amount from bills
-	total = float(randrange(2000,4000)/100)
-	tip_percent = float(randrange(15,20))
-	total_tips += tip(tip_percent, total)
-print total_tips
 
 Add print statements to convince yourself that the program is working.
 
@@ -98,44 +85,23 @@ Add print statements to convince yourself that the program is working.
 <li>Variables that you define as parameters for your function don’t have to have the same name as the parameters that you send to the function. Variables in our examples are matched by position.</li>
 </ul>
 
-I define the function
+I define a function
 <script src="http://gist-it.appspot.com/https://github.com/wendyjan/learn_python/tree/master/gdi_buffalo_2015/class1/functions.py?slice=24:29"></script>
-def salutation(person, gender):
-	if gender = “female” or gender == “f”:
-		print “Ms. “ + person
-	else:
-		print “Mr. “ + person
-	
+
 I use the function in my program
 <script src="http://gist-it.appspot.com/https://github.com/wendyjan/learn_python/tree/master/gdi_buffalo_2015/class1/functions.py?slice=30:34"></script>
-team = {‘Izydorczak’:”female”, ‘Jansson’:”female”, ‘Ryan’’:”male”]
-for member in team:
-	print “Hi “
-	salutation(member, team[member])
 
 <h3>A function for our Pypet</h3>
 
 PyPet happy expressions function - random happy expressions
 <script src="http://gist-it.appspot.com/https://github.com/wendyjan/learn_python/tree/master/gdi_buffalo_2015/class1/functions.py?slice=35:38"></script>
-def express_happy():
-	say_options =[“I love you!”, “Hip hip hurray!”, “Purr, Purr, I’m happy!”]
-	print random.choice(say_options)
 
 In a program
 <script src="http://gist-it.appspot.com/https://github.com/wendyjan/learn_python/tree/master/gdi_buffalo_2015/class1/functions.py?slice=39:45"></script>
-import random
-hungry = random.randint(0,10)
-if hungry < 5:
-	print “Hungry”
-else:
-	express_happy()
 
 Example with parameter but no return
 <script src="http://gist-it.appspot.com/https://github.com/wendyjan/learn_python/tree/master/gdi_buffalo_2015/class1/functions.py?slice=46:50"></script>
 import random
-def express_happy(owner):
-	say_options = [“I love you “ + owner + “!”, “Hip hip hurray!”]
-	print random.choice(say_options)
 
 What other functions might we have for our pets?
 </div> <!-- end of container for sample code -->
