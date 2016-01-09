@@ -1,29 +1,54 @@
-Functions 
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en-us">
 
-Some analogies
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
 
-outsourcing a job (sometimes with parameters, sometimes a returned item sometimes not)
-example: advertising, paychecks, photocopying
+    <!-- Enable responsiveness on mobile devices-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
 
-using a tool (emphasize repeated need and reusability, making the tool)
-example: scissors in my purse, tool for getting star on tree - if it works for other tall things even better
+    <title>Lists in Python</title>
 
-statements and expressions you’ll use
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
+  </head>
 
-def
-defines a new function
-return
-used inside a function definition at the end if there is something to be returned to the function
-call expression
-myfunc()  or whatever you name your function, with or without parameters
-lambda
-for a quick generic function, that is you don’t name it and you define it within your code
-global, nonlocal
-related to scope
-yield
-used in place of return when you want to return an iterable one item at a time
 
+  <body>
+
+    <div class="container">
+      <div class="jumbotron">
+        <h2>Functions</h2>
+        </div> <!-- end of jumbotron -->
+    </div> <!-- end of container for jumbotron-->
+    <div class="container">
+
+<h3>Some analogies</h3>
+
+<p>outsourcing a job (sometimes with parameters, sometimes a returned item sometimes not)
+example: advertising, paychecks, photocopying</p>
+
+<p>using a tool (emphasize repeated need and reusability, making the tool)
+example: scissors in my purse, tool for getting star on tree - if it works for other tall things even better</p>
+
+<h3>statements and expressions you’ll use</h3>
+<table border = "1" style = "width:100%">
+<tr>
+  <td>def</td>
+  <td>defines a new function</td>
+</tr>
+<tr>
+<td>return</td>
+<td>used inside a function definition at the end if there is something to be returned to the function</td>
+</tr>
+<tr>
+<td>call expression</td>
+<td>myfunc()  or whatever you name your function, with or without parameters</td>
+</tr>
+</table>
 Example
+
 def credits():
 	print “This example was borrowed from \’Learning Python\’ by Mark Lutz.”
 
@@ -31,8 +56,6 @@ In main program, anytime I want to give credit to Mark Lutz, I would type:
 
 credits()
 	
-
-
 Example
 def tip(percentage, total):
 	return round(percentage * total/100,2)
@@ -65,16 +88,16 @@ Add print statements to convince yourself that the program is working.
 
 
 
-Function Notes
+<h3>Function Notes</h3>
+<ul>
+<li>Functions involve stand alone definitions AND calls to a function within a program or several programs. (mention turtle functions)</li>
+<li>A function is defined using def, the name you choose, and () with or without parameters for input.</li>
+<li>The function may or may not end with a return statement.</li>
+<li>The functions would precede the main program if you have them in one file.</li>
+<li>Variables that you define as parameters for your function don’t have to have the same name as the parameters that you send to the function. Variables in our examples are matched by position.</li>
+</ul>
 
-Functions involve stand alone definitions AND calls to a function within a program or several programs. (mention turtle functions)
-A function is defined using def, the name you choose, and () with or without parameters for input.
-The function may or may not end with a return statement.
-The functions would precede the main program if you have them in one file.
-Variables that you define as parameters for your function don’t have to have the same name as the parameters that you send to the function. Variables in our examples are matched by position.
-
-
-#I define the function
+I define the function
 def salutation(person, gender):
 	if gender = “female” or gender == “f”:
 		print “Ms. “ + person
@@ -82,20 +105,20 @@ def salutation(person, gender):
 		print “Mr. “ + person
 	
 
-#I use the function in my program
+I use the function in my program
 team = {‘Izydorczak’:”female”, ‘Jansson’:”female”, ‘Ryan’’:”male”]
 for member in team:
 	print “Hi “
 	salutation(member, team[member])
 
-A function for our Pypet
+<h3>A function for our Pypet</h3>
 
-#PyPet happy expressions function - random happy expressions
+PyPet happy expressions function - random happy expressions
 def express_happy():
 	say_options =[“I love you!”, “Hip hip hurray!”, “Purr, Purr, I’m happy!”]
 	print random.choice(say_options)
 
-# in a program
+In a program
 import random
 
 hungry = random.randint(0,10)
