@@ -49,3 +49,9 @@ def express_happy(owner):
 	say_options = [“I love you “ + owner + “!”, “Hip hip hurray!”]
 	print random.choice(say_options)
 
+drawSquare()
+drawSquare(x,y)
+scissors(newspaper)	#not real python
+longReacher(object)	#not real python
+quadraticFormula(a,b,c)
+fahrenheitConverter(degrees_celsius)
