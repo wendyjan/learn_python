@@ -1,6 +1,6 @@
 dogs = [‘Rover’, ‘Max’, ‘Holly’]
 for dog in dogs:
-	dog = dog + ‘\’s’
+	dog = dog + ‘s’
 	print dog
 	
 for letter in “word”:
@@ -47,8 +47,8 @@ for i, day in enumerate([Mon, Tue, Wed, Thurs, Fri]):
 
 food = 0
 while food < 5:
-hungry = raw_input(“Are you hungry? Type Y or N ”)
-if hungry == “Y”:
+	hungry = raw_input(“Are you hungry? Type Y or N ”)
+	if hungry == “Y”:
 		print “Here is a treat for you.”
 		food += 1
 print “I feel full”
