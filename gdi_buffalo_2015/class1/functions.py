@@ -12,7 +12,7 @@ print tip(15,24.50)
 
 bill = raw_ input(“What did your bill come to?”)
 p = raw_input(“What percentage would you like to use for the tip?”)
-print ‘tip is’ tip(float(p), float(bill))
+print ‘tip is’ tip(float(p), float(bill)) #show float conversion outside
 
 total_tips = 0
 for transaction in range(8):
