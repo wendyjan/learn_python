@@ -43,46 +43,24 @@
 
 Try 
 <script src="http://gist-it.appspot.com/https://github.com/wendyjan/learn_python/tree/master/gdi_buffalo_2015/class1/Loops.py?slice=0:4"></script>
-dogs = [‘Rover’, ‘Max’, ‘Holly’]
-for dog in dogs:
-	dog = dog + ‘\’s’
-	print dog
+
 Try 
 <script src="http://gist-it.appspot.com/https://github.com/wendyjan/learn_python/tree/master/gdi_buffalo_2015/class1/Loops.py?slice=5:7"></script>
-for letter in “word”:
-	print letter + “uba”
 
 Try 
 <script src="http://gist-it.appspot.com/https://github.com/wendyjan/learn_python/tree/master/gdi_buffalo_2015/class1/Loops.py?slice=8:15"></script>
-ages_later = []
-years = 10
-ages = [12, 15, 17]
-for age in ages:
-	age +=years
-	ages_later.append(age)
-print ages_later
-
 
 <h3>range is useful for number sequences</h3>
 
 Try
 <script src="http://gist-it.appspot.com/https://github.com/wendyjan/learn_python/tree/master/gdi_buffalo_2015/class1/Loops.py?slice=16:17"></script>
-range(5)
+
 
 Try
 <script src="http://gist-it.appspot.com/https://github.com/wendyjan/learn_python/tree/master/gdi_buffalo_2015/class1/Loops.py?slice=18:20"></script>
-for x in range(5):
-	print x**2
 
 Try
 <script src="http://gist-it.appspot.com/https://github.com/wendyjan/learn_python/tree/master/gdi_buffalo_2015/class1/Loops.py?slice=21:27"></script>
-ages_later = []
-years = 10
-for age in range(12,18):
-	age +=years
-	ages_later.append(age)
-print ages_later
-
 
 back to dogs, repeat code and this time add
 print dogs
@@ -92,115 +70,53 @@ Most of the time we iterate through a list by items, like dogs. Sometimes it is 
 
 Here is code that would change each dog in the list.
 <script src="http://gist-it.appspot.com/https://github.com/wendyjan/learn_python/tree/master/gdi_buffalo_2015/class1/Loops.py?slice=28:32"></script>
-dogs = [‘Rover’, ‘Holly’]
-for i in range(len(dogs)):
-	dogs[i] = dogs[i] + ‘\’s’
-print dogs
 
 This code uses range and len to shuffle a group of items.
 <script src="http://gist-it.appspot.com/https://github.com/wendyjan/learn_python/tree/master/gdi_buffalo_2015/class1/Loops.py?slice=33:37"></script>
 
-cards = [‘ace’, 2,3,4,’queen’]
-for i in range(len(cards)):
-	cards = cards[i:] + cards[:i]
-	print cards
-
 Most of the time, it is better and more “Pythonic” to use for without indexing.
 <script src="http://gist-it.appspot.com/https://github.com/wendyjan/learn_python/tree/master/gdi_buffalo_2015/class1/Loops.py?slice=38:43"></script>
-multiples_of_two_and_three = []
-for x in range(100):
-	if x%2 == 0 and x%3==0:
-		multiples_of_two_and_three.append(x)
-
-print multiples_of_two_and_three
 
 Another useful function within for loops is enumerate(list).
 
 Try
 <script src="http://gist-it.appspot.com/https://github.com/wendyjan/learn_python/tree/master/gdi_buffalo_2015/class1/Loops.py?slice=44:46"></script>
-for i, day in enumerate([Mon, Tue, Wed, Thurs, Fri]):
-	print i, day
-
 
 <h2>While loops</h2>
-
 
 Different from for because it will continue to loop until some condition is met, indefinite number of repetitions
 
 <h3>Pypet with while loops</h3>
 <script src="http://gist-it.appspot.com/https://github.com/wendyjan/learn_python/tree/master/gdi_buffalo_2015/class1/Loops.py?slice=47:54"></script>
-food = 0
-while food < 5:
-
-hungry = raw_input(“Are you hungry? Type Y or N ”)
-if hungry == “Y”:
-		print “Here is a treat for you.”
-		food += 1
-
-print “I feel full”
 
 Then add break for else within loop.
 Then add else for while loop with print i feel full.
 <script src="http://gist-it.appspot.com/https://github.com/wendyjan/learn_python/tree/master/gdi_buffalo_2015/class1/Loops.py?slice=55:66"></script>
-food = 0
-
-while food < 5:
-
-	hungry = raw_input('Are you hungry? Type Y or N ')
-
-	if hungry == 'Y':
-		print 'Here is a treat for you.'
-		food += 1
-	else:
-		break
-
-else:
-	print "I sure was hungry!"
-print 'Now what?'
 
 <h3>Control Flow with while</h3>
 <ul>
 <li>break will break out of the loop and go to the next statement outside of the loop without executing anything else within the loop.</li>
-<li><continue will return to the top of the loop./li>
+<li>continue will return to the top of the loop.</li>
 <li>else will execute if the loop condition fails. Gets skipped if there is a break.</li>
 </ul>
 <script src="http://gist-it.appspot.com/https://github.com/wendyjan/learn_python/tree/master/gdi_buffalo_2015/class1/Loops.py?slice=67:71"></script>
-dogs = [‘Holly’, ‘Max’, ‘Sadie’, ‘Joey’]
-while dogs:					#unempty lists have the boolean value of True
-	print dogs.pop(0) + “ barks.”		# pop gets an item AND removes it from the list
-	print dogs
 
 Change so that if the dog is Sadie, it doesn’t bark, but does keep going with the loop.
 <script src="http://gist-it.appspot.com/https://github.com/wendyjan/learn_python/tree/master/gdi_buffalo_2015/class1/Loops.py?slice=72:80"></script>
-dogs = ['Holly','Max','Sadie','Joey']
-i = 0
-while len(dogs) > 1:
-	if dogs[i] == 'Sadie':
-		i=1
-		continue
-	print dogs.pop(i) + " barks"
-	print dogs
-
 
 What does this program do?
 <script src="http://gist-it.appspot.com/https://github.com/wendyjan/learn_python/tree/master/gdi_buffalo_2015/class1/Loops.py?slice=81:87"></script>
-x = 10
-while x:			#remember x has the boolean value of True
-	x = x-1
-	if x % 2 != 0:
-		continue
-	print x
 
 <h3>Warning: Watch out for infinite loops</h3>
 
 DO NOT TYPE THIS
-<script src="http://gist-it.appspot.com/https://github.com/wendyjan/learn_python/tree/master/gdi_buffalo_2015/class1/Loops.py?slice=1:2"></script>
+<script src="http://gist-it.appspot.com/https://github.com/wendyjan/learn_python/tree/master/gdi_buffalo_2015/class1/Loops.py?slice=88:91"></script>
 x = 11
 while x > 10:
 	print “uh oh”
 
 DO NOT TYPE THIS
-<script src="http://gist-it.appspot.com/https://github.com/wendyjan/learn_python/tree/master/gdi_buffalo_2015/class1/Loops.py?slice=1:2"></script>
+<script src="http://gist-it.appspot.com/https://github.com/wendyjan/learn_python/tree/master/gdi_buffalo_2015/class1/Loops.py?slice=92:94"></script>
 while True:
 	print “uh oh”
 
@@ -209,7 +125,7 @@ To prevent infinite loops, there should be a condition in the while statement th
 <h3>Nested Loops</h3>
 
 Try 
-<script src="http://gist-it.appspot.com/https://github.com/wendyjan/learn_python/tree/master/gdi_buffalo_2015/class1/Loops.py?slice=1:2"></script>
+<script src="http://gist-it.appspot.com/https://github.com/wendyjan/learn_python/tree/master/gdi_buffalo_2015/class1/Loops.py?slice=95:100"></script>
 dogs = [‘Rover’, ‘Max’, ‘Holly’]
 toys = [‘bone’, ‘squirrel’]
 for dog in dogs:
@@ -217,11 +133,11 @@ for dog in dogs:
 		print ‘That is ‘ + dog + ‘\’s ’ + toy + ‘.’
 	
 Other options for formatting the string
-<script src="http://gist-it.appspot.com/https://github.com/wendyjan/learn_python/tree/master/gdi_buffalo_2015/class1/Loops.py?slice=1:2"></script>
+<script src="http://gist-it.appspot.com/https://github.com/wendyjan/learn_python/tree/master/gdi_buffalo_2015/class1/Loops.py?slice=101:102"></script>
 	print “That is %s\’s %s.” % (dog,toy)
 
 Try this program to search the first list for items in the second list
-<script src="http://gist-it.appspot.com/https://github.com/wendyjan/learn_python/tree/master/gdi_buffalo_2015/class1/Loops.py?slice=1:2"></script>
+<script src="http://gist-it.appspot.com/https://github.com/wendyjan/learn_python/tree/master/gdi_buffalo_2015/class1/Loops.py?slice=103:111"></script>
 items = [“aaa”, 111, (4,5), 2.01]
 tests = [(4,5), 3.14]
 for thing in tests:
