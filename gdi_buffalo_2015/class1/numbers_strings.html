@@ -22,7 +22,7 @@
         <h2>Numbers, Bools and Strings</h2>
         </div> <!-- end of jumbotron -->
     </div> <!-- end of container for jumbotron-->
-    <div class="container">Numbers, Booleans and Strings
+    <div class="container">
 
 <h3>Numbers</h3>
 
@@ -48,10 +48,13 @@ remainder</li>
 <li>() 
 parentheses group subexpressions, but are also used to create a tuple</li>
 <li>+=, *=, /=,-=
-operates and assigns all at once
-sum = sum + 1   is equivalent to 
+operates and assigns all at once, 
+sum = sum + 1, is equivalent to 
 sum += 1</li>
 </ul>
+
+Try
+<script src="http://gist-it.appspot.com/https://github.com/wendyjan/learn_python/tree/master/gdi_buffalo_2015/class1/numbers_strings.py?slice=0:4"></script>
 
 <h3>Operator precedence (order of operations)</h3>
 <ul>
@@ -65,7 +68,7 @@ sum += 1</li>
 
 Try 
 40/3
-<script src="http://gist-it.appspot.com/https://github.com/wendyjan/learn_python/tree/master/gdi_buffalo_2015/class1/numbers_strings.py?slice=0:1"></script>
+<script src="http://gist-it.appspot.com/https://github.com/wendyjan/learn_python/tree/master/gdi_buffalo_2015/class1/numbers_strings.py?slice=5:6"></script>
 Now,make adjustments so that you get a float answer.Mixed types computation of int and float result in float. 
 
 <h3>Built-in functions to use on numbers</h3>
@@ -95,83 +98,33 @@ Traditionally include the values True and False, which correspond to 1 and 0
 In Python, everything has a boolean value. Most numbers, strings, lists, etc correspond to a boolean value of True.
 False is the value for 0, {}, [], ‘’, None.
 
-Comparison Operators
-
-
->, >=, <, <=
-
-
-less than, greater than, . . .
-
-
-
-
-==
-equal when compared (single = is for assignment)
-!=
-not equal
-
-
-
-
-
-
-
-
-
-
-
-Try:
-
+Try
+<script src="http://gist-it.appspot.com/https://github.com/wendyjan/learn_python/tree/master/gdi_buffalo_2015/class1/numbers_strings.py?slice=1:2"></script>
 5 == 6
 5==5
 5 == ‘5’
 6 <= 7
 5!=5
 
-Logical Operators
-
-
-or
-
-
-and
-
-
-not
-
-
-in
-
-
-
-
-Try:
-
+Try
+<script src="http://gist-it.appspot.com/https://github.com/wendyjan/learn_python/tree/master/gdi_buffalo_2015/class1/numbers_strings.py?slice=1:2"></script>
 5 != 1 or 5 == 1
-
 4 < 5 and 1 < 4
-
 1 < 4 < 5
-
 a = 4
 1 < a < 5
-
-1 + 9 == 10 and 90 / 2 == 40             			(error)
-
+1 + 9 == 10 and 90/2 == 40             		
 not 5 == 1
 
-
-Strings
+<h3>Strings</h3>
 
 Examples
+<script src="http://gist-it.appspot.com/https://github.com/wendyjan/learn_python/tree/master/gdi_buffalo_2015/class1/numbers_strings.py?slice=1:2"></script>
 “Munch”
-‘Munch’					Double or single quotes can be used
+‘Munch’					#Double or single quotes can be used
 “Wake up, kids!\n It\’s time for school.”
 
-
-
-Escape sequences for special characters
+<h3>Escape sequences for special characters</h3>
 \n
 newline (a whitespace character)
 \t
@@ -183,9 +136,8 @@ backslash will be within string, or use raw string by preceding the string with 
 r
 keeps backslashes as back slashes when it precedes a string
 
-
 Try
-
+<script src="http://gist-it.appspot.com/https://github.com/wendyjan/learn_python/tree/master/gdi_buffalo_2015/class1/numbers_strings.py?slice=1:2"></script>
 print (r”C:\py\code”)
 
 Make Python print the following conversation, using one print statement.
@@ -193,34 +145,34 @@ Make Python print the following conversation, using one print statement.
 “The apple don’t fall too far from the tree,” said dad.
 
 
-Common String Operations for a string S
-
-len(S)
-length of string
-S * 3
-repeat
-S + “another string”
-concatenate
-S[i]
-Uses index to select one character
-S[i:j]
-Slices a group of characters
-S.find(‘c’)
-Finds index (position) of given character
-S.rstrip(), S.lstrip(), S.strip()
-remove whitespace characters from right, left, or both sides
-S.replace(‘cc’, ‘pa’)
-replaces first string with second
-S.split(‘,’)
-split on delimiter, in this case a comma
-S.lower(), S.upper()
-change case
-S.endswith(‘es’)
-returns True or False depending if the string ends with es
-
+<h3>Common String Operations for a string S</h3>
+<ul>
+<li>len(S)
+length of string</li>
+<li>S * 3
+repeat</li>
+<li>S + “another string”
+concatenate</li>
+<li>S[i]
+Uses index to select one character</li>
+<li>S[i:j]
+Slices a group of characters</li>
+<li>S.find(‘c’)
+Finds index (position) of given character</li>
+<li>S.rstrip(), S.lstrip(), S.strip()
+remove whitespace characters from right, left, or both sides</li>
+<li>S.replace(‘cc’, ‘pa’)
+replaces first string with second</li>
+<li>S.split(‘,’)
+split on delimiter, in this case a comma</li>
+<li>S.lower(), S.upper()
+change case</li>
+<li>S.endswith(‘es’)
+returns True or False depending if the string ends with es</li>
+</ul>
 
 Try 
-
+<script src="http://gist-it.appspot.com/https://github.com/wendyjan/learn_python/tree/master/gdi_buffalo_2015/class1/numbers_strings.py?slice=1:2"></script>
 S = “Happy Halloween, Best Witches!”
 len(S)
 S * 2
@@ -237,8 +189,7 @@ S.split(‘,’)
 S.lower()
 S
 
-
-More on Indexing and Slicing 
+<h3More on Indexing and Slicing 
 
 An index is the position of a number when counting positions starts with 0. The first character in the string has index 0. 
 
