@@ -80,3 +80,7 @@ a = 4
 1 + 9 == 10 and 90 / 2 == 40             			
 not 5 == 1
 
+bool(5)
+bool([2,3,4])
+bool([])
+bool(True)
