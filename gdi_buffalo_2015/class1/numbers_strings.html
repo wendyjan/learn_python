@@ -1,0 +1,307 @@
+Numbers, Booleans and Strings
+
+
+Numbers 
+
+What can we do with ints and floats and other number types?
+
+Operators
++
+addition
+*
+multiplication
+-
+subtraction, negation
+/
+true division
+//
+floor division (truncates fractional remainders)
+**
+exponentiation
+%
+remainder
+() 
+parentheses group subexpressions, but are also used to create a tuple
++=, *=, /=,-=
+operates and assigns all at once
+sum = sum + 1   is equivalent to 
+sum += 1
+
+
+
+
+
+
+
+
+
+
+Operator precedence (order of operations) is 
+
+Grouping symbols
+Exponents
+Multiplicaton and division left to right
+Addition and subtraction left to right
+
+Mixed Types
+
+	Try 
+40/3
+
+	Now,make adjustments so that you get a float answer.
+
+	Mixed types computation of int and float result in float. 
+
+
+
+Built-in functions to use on numbers
+
+
+
+
+
+sum(L)
+L is list , test to see if it can be other type
+min(L)
+
+
+max(L)
+
+
+round(x,n)
+float, round x to the nth place
+abs()
+absolute value of an int or float
+
+Useful Functions from other modules
+
+
+math.sqrt()
+
+
+math.sin()
+and other trig functions
+random.random()
+
+
+random.randint()
+
+
+
+
+
+
+Write some code to compute the Celsius temperature if you know the Fahrenheit temp. 
+
+
+
+
+Write code to compute the two x values from the quadratic formula given A, B and C.
+
+Adjust your formula to take input, like this:
+a = raw_input(“What is the value of a? “)
+
+Note that input comes in as a string.
+
+
+Booleans
+
+Traditionally include the values True and False, which correspond to 1 and 0
+
+In Python, everything has a boolean value. Most numbers, strings, lists, etc correspond to a boolean value of True.
+False is the value for 0, {}, [], ‘’, None.
+
+Comparison Operators
+
+
+>, >=, <, <=
+
+
+less than, greater than, . . .
+
+
+
+
+==
+equal when compared (single = is for assignment)
+!=
+not equal
+
+
+
+
+
+
+
+
+
+
+
+Try:
+
+5 == 6
+5==5
+5 == ‘5’
+6 <= 7
+5!=5
+
+Logical Operators
+
+
+or
+
+
+and
+
+
+not
+
+
+in
+
+
+
+
+Try:
+
+5 != 1 or 5 == 1
+
+4 < 5 and 1 < 4
+
+1 < 4 < 5
+
+a = 4
+1 < a < 5
+
+1 + 9 == 10 and 90 / 2 == 40             			(error)
+
+not 5 == 1
+
+
+Strings
+
+Examples
+“Munch”
+‘Munch’					Double or single quotes can be used
+“Wake up, kids!\n It\’s time for school.”
+
+
+
+Escape sequences for special characters
+\n
+newline (a whitespace character)
+\t
+ tab (a whitespace character)
+\’ or \”
+quotes will be within string, or use raw string, rstring
+\\
+backslash will be within string, or use raw string by preceding the string with r
+r
+keeps backslashes as back slashes when it precedes a string
+
+
+Try
+
+print (r”C:\py\code”)
+
+Make Python print the following conversation, using one print statement.
+“That’s my boy,” said mom.
+“The apple don’t fall too far from the tree,” said dad.
+
+
+Common String Operations for a string S
+
+len(S)
+length of string
+S * 3
+repeat
+S + “another string”
+concatenate
+S[i]
+Uses index to select one character
+S[i:j]
+Slices a group of characters
+S.find(‘c’)
+Finds index (position) of given character
+S.rstrip(), S.lstrip(), S.strip()
+remove whitespace characters from right, left, or both sides
+S.replace(‘cc’, ‘pa’)
+replaces first string with second
+S.split(‘,’)
+split on delimiter, in this case a comma
+S.lower(), S.upper()
+change case
+S.endswith(‘es’)
+returns True or False depending if the string ends with es
+
+
+Try 
+
+S = “Happy Halloween, Best Witches!”
+len(S)
+S * 2
+S + “Boo”
+S
+S[5]
+S[4]
+S[5:10]
+S.find(’Witch’)
+S.find(“a”)
+S.replace(‘!’, ‘?’)
+S.split(‘ ‘)
+S.split(‘,’)
+S.lower()
+S
+
+
+More on Indexing and Slicing 
+
+An index is the position of a number when counting positions starts with 0. The first character in the string has index 0. 
+
+A slice from i to j denoted [i:j] starts at i and ends before j.
+
+[i:] fetches characters from i to the end of the string. [:j] fetches characters from the beginning.
+
+A negative index starts at the right end with -1.
+
+A step, k, can be used [i:j:k] in a slice. k can be positive or negative.
+
+Picture it like this:
+
+0         	1	2	3	4	5	6	7	8	9	10	
+g
+l
+u
+t
+e
+n
+
+
+f
+r
+e
+e
+									-2	-1
+
+Try
+my_string = “gluten free”
+my_string[0]
+my_string[3:9]
+my_string[:]
+“gluten free”[3]
+my_string[0:9]
+my_string[:7]
+my_string[2:]
+my_string[-1:-5]
+my_string[-5:-1]
+my_string[0:11:3]
+my_string[::-1]
+my_string[0:2] + my_string[-2:]
+
+Slice my_string to get the following outputs:
+“free”
+“u”
+“tnf”
+
+String formatting
+
