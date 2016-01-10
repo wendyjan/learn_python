@@ -35,7 +35,6 @@ not 5 == 1
 “Munch”
 ‘Munch’		
 “Wake up, kids!\n It\’s time for school.”
-
 print (r”C:\py\code”)
 
 S = “Happy Halloween, Best Witches!”
