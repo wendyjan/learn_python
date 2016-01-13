@@ -73,7 +73,10 @@ my_string[-1:-5]
 my_string[0:11:3]
 my_string[::-1]
 
-
 “free”
 “u”
 “tnf”
+
+n = 3
+x = 2
+n/x
