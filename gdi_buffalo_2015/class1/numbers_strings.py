@@ -14,7 +14,7 @@ math.sin(30)
 
 import random
 random.random()
-random.randint()
+random.randint(1,10)
 
 a = raw_input(“What is the value of a? “)
 
