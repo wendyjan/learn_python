@@ -1,0 +1,2 @@
+Now that I've learned the basics and know I won't blow up the computer,
+I better find a good website or book to keep learning Python!
