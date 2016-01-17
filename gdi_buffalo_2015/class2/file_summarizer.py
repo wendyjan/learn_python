@@ -10,3 +10,5 @@ if __name__ == "__main__":
 
     dataframe = pd.DataFrame(files_data)
     dataframe.to_excel("fileSummaries.xlsx")
+
+# what does listdir('.') do? which library is to_excel in?
