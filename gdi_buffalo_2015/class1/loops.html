@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en-us">
+
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+
+    <!-- Enable responsiveness on mobile devices-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+
+    <title>Loops</title>
+
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
+  </head>
+
+
+  <body>
+
+    <div class="container">
+      <div class="jumbotron">
+        <h2>Loops</h2>
+        </div> <!-- end of jumbotron -->
+    </div> <!-- end of container for jumbotron-->
+    <div class="container">
+
+<h3>Loops allow us to repeat a procedure </h3>
+
+<h3>Some looping (and related) reserved words in Python:</h3>
+
+<ul>
+<li>for</li>
+<li>in</li>
+<li>while</li>
+<li>break</li>
+<li>continue</li>
+<li>while else</li>
+<li>range</li>
+<li>enumerate</li>
+</ul>
+
+<h3>for is useful for doing something to or with each item in a list or other iterable.</h3>
+
+Try 
+<script src="http://gist-it.appspot.com/https://github.com/wendyjan/learn_python/tree/master/gdi_buffalo_2015/class1/Loops.py?slice=0:4"></script>
+
+Try 
+<script src="http://gist-it.appspot.com/https://github.com/wendyjan/learn_python/tree/master/gdi_buffalo_2015/class1/Loops.py?slice=5:7"></script>
+
+Try 
+<script src="http://gist-it.appspot.com/https://github.com/wendyjan/learn_python/tree/master/gdi_buffalo_2015/class1/Loops.py?slice=8:15"></script>
+
+<h3>range is useful for number sequences</h3>
+or for traversing a list using the index of each item
+
+Try
+<script src="http://gist-it.appspot.com/https://github.com/wendyjan/learn_python/tree/master/gdi_buffalo_2015/class1/Loops.py?slice=16:17"></script>
+
+
+Try
+<script src="http://gist-it.appspot.com/https://github.com/wendyjan/learn_python/tree/master/gdi_buffalo_2015/class1/Loops.py?slice=18:20"></script>
+
+Try
+<script src="http://gist-it.appspot.com/https://github.com/wendyjan/learn_python/tree/master/gdi_buffalo_2015/class1/Loops.py?slice=21:27"></script>
+
+back to dogs, repeat code and this time add
+print dogs
+notice that the original list has not changed. We only temporarily changed each dog.
+
+Most of the time we iterate through a list by items, like dogs. Sometimes it is useful to iterate by the index of each item. Each item in a list has a corresponding index number, starting with 0.
+
+Here is code that would change each dog in the list.
+<script src="http://gist-it.appspot.com/https://github.com/wendyjan/learn_python/tree/master/gdi_buffalo_2015/class1/Loops.py?slice=28:32"></script>
+
+This code uses range and len to shuffle a group of items.
+<script src="http://gist-it.appspot.com/https://github.com/wendyjan/learn_python/tree/master/gdi_buffalo_2015/class1/Loops.py?slice=33:37"></script>
+
+Most of the time, it is better and more “Pythonic” to use for without indexing.
+<script src="http://gist-it.appspot.com/https://github.com/wendyjan/learn_python/tree/master/gdi_buffalo_2015/class1/Loops.py?slice=38:43"></script>
+
+Another useful function within for loops is enumerate(list).
+
+Try
+<script src="http://gist-it.appspot.com/https://github.com/wendyjan/learn_python/tree/master/gdi_buffalo_2015/class1/Loops.py?slice=44:46"></script>
+
+<h2>While loops</h2>
+
+Different from for because it will continue to loop until some condition is met, indefinite number of repetitions
+
+<h3>Pypet with while loops</h3>
+<script src="http://gist-it.appspot.com/https://github.com/wendyjan/learn_python/tree/master/gdi_buffalo_2015/class1/Loops.py?slice=47:54"></script>
+
+Then add break for else within loop.
+Then add else for while loop with print i feel full.
+<script src="http://gist-it.appspot.com/https://github.com/wendyjan/learn_python/tree/master/gdi_buffalo_2015/class1/Loops.py?slice=55:66"></script>
+
+<h3>Control Flow with while</h3>
+<ul>
+<li>break will break out of the loop and go to the next statement outside of the loop without executing anything else within the loop.</li>
+<li>continue will return to the top of the loop.</li>
+<li>else will execute if the loop condition fails. Gets skipped if there is a break.</li>
+</ul>
+<script src="http://gist-it.appspot.com/https://github.com/wendyjan/learn_python/tree/master/gdi_buffalo_2015/class1/Loops.py?slice=67:71"></script>
+
+Change so that if the dog is Sadie, it doesn’t bark, but does keep going with the loop.
+<script src="http://gist-it.appspot.com/https://github.com/wendyjan/learn_python/tree/master/gdi_buffalo_2015/class1/Loops.py?slice=72:80"></script>
+
+What does this program do?
+<script src="http://gist-it.appspot.com/https://github.com/wendyjan/learn_python/tree/master/gdi_buffalo_2015/class1/Loops.py?slice=81:87"></script>
+
+<h3>Warning: Watch out for infinite loops</h3>
+
+DO NOT TYPE THIS
+<script src="http://gist-it.appspot.com/https://github.com/wendyjan/learn_python/tree/master/gdi_buffalo_2015/class1/Loops.py?slice=88:91"></script>
+
+DO NOT TYPE THIS
+<script src="http://gist-it.appspot.com/https://github.com/wendyjan/learn_python/tree/master/gdi_buffalo_2015/class1/Loops.py?slice=92:94"></script>
+
+To prevent infinite loops, there should be a condition in the while statement that will eventually be met OR there should be a break, usually in conjunction with if/then
+
+<h3>Nested Loops</h3>
+
+Try 
+<script src="http://gist-it.appspot.com/https://github.com/wendyjan/learn_python/tree/master/gdi_buffalo_2015/class1/Loops.py?slice=95:100"></script>
+
+Other options for formatting the string
+<script src="http://gist-it.appspot.com/https://github.com/wendyjan/learn_python/tree/master/gdi_buffalo_2015/class1/Loops.py?slice=101:102"></script>
+
+Try this program to search the first list for items in the second list
+<script src="http://gist-it.appspot.com/https://github.com/wendyjan/learn_python/tree/master/gdi_buffalo_2015/class1/Loops.py?slice=103:111"></script>
+
+    </div> <!-- end of container for sample code -->
+
+  </body>
+</html>
+
+
