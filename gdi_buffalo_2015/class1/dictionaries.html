@@ -28,34 +28,36 @@
 
       <br><br>Here's a small dictionary.
       </p>
-      <script src="http://gist-it.appspot.com/https://github.com/wendyjan/learn_python/tree/master/gdi_buffalo_2015/class1/dictionaries.py?slice=8:9"></script>
+      <script src="http://gist-it.appspot.com/https://github.com/wendyjan/learn_python/tree/master/gdi_buffalo_2015/class1/dictionaries.py?slice=10:12"></script>
       <p>Notice the syntax: there are colons between each pair of items.
       In a dictionary, everything is stored in a pair.
-      <br>But a dictionary is more than just pairs of items-- the first member of the pair is a "key", and the second is a "value".
+      <br><br>But a dictionary is more than just pairs of items-- the first member of the pair is a "key", and the second is a "value".
       <br>In this example, "Wendy" is a unique key, and its value is "Jansson".
-      We can look up any value in the dictionary using its key. We can also add a new key-value pair.
+      We can look up any value in the dictionary using its key.
+      </p>
+      <script src="http://gist-it.appspot.com/https://github.com/wendyjan/learn_python/tree/master/gdi_buffalo_2015/class1/dictionaries.py?slice=12:13"></script>
+      <p>
+      <br>We can also add a new key-value pair.
       <br>Just like we used a bracket to select a single ordered element from a list, we use a bracket to select a single value for a key, or store a new value for a key.
       <br>Try out the code below:
       </p>
-      <script src="http://gist-it.appspot.com/https://github.com/wendyjan/learn_python/tree/master/gdi_buffalo_2015/class1/dictionaries.py?slice=11:14"></script>
-      <p>Do you have a guess what might happen if we try to put in two "Joe" keys with different values?
+      <script src="http://gist-it.appspot.com/https://github.com/wendyjan/learn_python/tree/master/gdi_buffalo_2015/class1/dictionaries.py?slice=14:18"></script>
+      <p>Do you have a guess what might happen if we try to put in two "Clara" keys with different values?
       </p>
-      <script src="http://gist-it.appspot.com/https://github.com/wendyjan/learn_python/tree/master/gdi_buffalo_2015/class1/dictionaries.py?slice=11:18"></script>
+      <script src="http://gist-it.appspot.com/https://github.com/wendyjan/learn_python/tree/master/gdi_buffalo_2015/class1/dictionaries.py?slice=19:22"></script>
       <p>
          The first value will just be replaced by the second value.
          This means that the keys must be unique! We can't have two "Joe" keys in the same dictionary with different values.
       <br>And what if we ask for the value of a key we haven't put in yet?
       </p>
-      <script src="http://gist-it.appspot.com/https://github.com/wendyjan/learn_python/tree/master/gdi_buffalo_2015/class1/dictionaries.py?slice=19:20"></script>
+      <script src="http://gist-it.appspot.com/https://github.com/wendyjan/learn_python/tree/master/gdi_buffalo_2015/class1/dictionaries.py?slice=23:24"></script>
       <p>An error is thrown.
       <br><br>
       Now let's return to our PyPet example, and store all of that information in a single dictionary.
-      </p>
-      <script src="http://gist-it.appspot.com/https://github.com/wendyjan/learn_python/tree/master/gdi_buffalo_2015/class1/dictionaries.py?slice=21:23"></script>
-      <p>We can describe our entire PyPet using a dictionary.
+      We can describe our entire PyPet using a dictionary.
       <br>We can also print out the dictionary that describes Monty very easily:
       </p>
-      <script src="http://gist-it.appspot.com/https://github.com/wendyjan/learn_python/tree/master/gdi_buffalo_2015/class1/dictionaries.py?slice=21:25"></script>
+      <script src="http://gist-it.appspot.com/https://github.com/wendyjan/learn_python/tree/master/gdi_buffalo_2015/class1/dictionaries.py?slice=25:29"></script>
       <p>
       In the line that begins the for loop,
       we got a list of all the dictionary's keys by calling "monty.keys()".
@@ -66,6 +68,12 @@
       like we could for a list.
       <br>Dictionaries are a hashmap, which store key-value pairs.
       There is no inherent order, just the unique keys to store their values.
+      <br><br>Lastly, take a look at this code and see if you can explain what each line does.
+      What will be printed to the screen?
+      I think by now you've built up enough Python intuition to guess well!
+      </p>
+      <script src="http://gist-it.appspot.com/https://github.com/wendyjan/learn_python/tree/master/gdi_buffalo_2015/class1/dictionaries.py?slice=30:37"></script>
+      <p>
     </div> <!-- end of container for sample code -->
 
   </body>
