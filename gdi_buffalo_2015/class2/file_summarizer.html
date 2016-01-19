@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en-us">
+
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+
+    <!-- Enable responsiveness on mobile devices-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+
+    <title>File I/O and the Pandas Library</title>
+
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
+  </head>
+  <body>
+    <div class="container">
+      <div class="jumbotron">
+        <h2>File I/O and the Pandas Library</h2>
+        </div> <!-- end of jumbotron -->
+    </div> <!-- end of container for jumbotron-->
+    <div class="container">
+      <p><i>Click the blue "This Gist" link at the bottom left of each code block to see the source code on my Github account.</i>
+      <br><br>Now that you've seen how fast and easy file i/o can be in Python,
+      let's take a look at one of my favorite libraries that helps us do even more.
+      This library is called "Pandas".
+      Pandas is great at storing a lot of data with complicated internal structures.
+      This library is also awesome because of how smoothly it can write data to nice formats!
+      Check out this example of a file that crawls our current directory
+      (wherever the file_summarizer.py file is located) and collects the name of each file,
+      then writes an Excel summary of the information.
+      <br>First, take a look at the whole file.
+      Get used to that feeling of new code and unknown methods, you'll have it a lot!
+      Personally I think that if a programmer understood everything the second they looked at it,
+      they need to move along find some tougher code! Challenging yourself to read and guess is the point right now :)
+      </p>
+      <script src="http://gist-it.appspot.com/https://github.com/wendyjan/learn_python/tree/master/gdi_buffalo_2015/class2/file_summarizer.py"></script>
+      <p>
+        Ok, now let's break the file down line by line.
+        <br>The "os" module comes with Python itself. It contains functions to deal with the operating system.
+        We'll use it to collect the files in the same directory as this script.
+      </p>
+      <script src="http://gist-it.appspot.com/https://github.com/wendyjan/learn_python/tree/master/gdi_buffalo_2015/class2/file_summarizer.py?slice=1:2"></script>
+      <p>
+        <br>The "pandas" module is not built-in, it's a third-party module.
+        It's great for handling lots of data and exporting it to useful formats.
+      </p>
+      <script src="http://gist-it.appspot.com/https://github.com/wendyjan/learn_python/tree/master/gdi_buffalo_2015/class2/file_summarizer.py?slice=2:3"></script>
+      <p>Make a list that will store the names of all the files in this folder.</p>
+      <script src="http://gist-it.appspot.com/https://github.com/wendyjan/learn_python/tree/master/gdi_buffalo_2015/class2/file_summarizer.py?slice=4:6"></script>
+      <p>Then use the os library's 'listdir' method to get the names of all the files in the directory '.'.
+      <br>In the command line of the computer, the '.' directory means "whatever directory the script is currently inside."</p>
+      <script src="http://gist-it.appspot.com/https://github.com/wendyjan/learn_python/tree/master/gdi_buffalo_2015/class2/file_summarizer.py?slice=7:9"></script>
+      <p>Lastly, put our data into a Pandas data structure called a "DataFrame."
+        This type is specific to Pandas, and you can read more about it at
+        <a href="http://pandas.pydata.org/pandas-docs/stable/generated/pandas.DataFrame.html">this link.</a>
+        A DataFrame in Pandas is very easy to write to Excel. Just use the dedicated 'to_excel' function.
+      </p>
+      <script src="http://gist-it.appspot.com/https://github.com/wendyjan/learn_python/tree/master/gdi_buffalo_2015/class2/file_summarizer.py?slice=10:12"></script>
+      <p>
+        All done! Wasn't that easy?
+      </p>
+    </div>
+  </body>
+</html>
