@@ -18,7 +18,7 @@ if __name__ == "__main__":
     print my_dict
     
     # Can we store two different Claras?
-    my_dict["Clara"] = "Wu"
+    my_dict["Clara"] = "Wu"    # Remember up above we already said "Clara": "Rodriguez"!
     print my_dict["Clara"]
 
     #print my_dict["Anne"] # Comment this line out unless you want an error!
