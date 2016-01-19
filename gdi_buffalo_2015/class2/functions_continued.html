@@ -28,19 +28,24 @@
       <p>We also learned how to pass in parameters, so we can give the function data from outside it.
       </p>
       <script src="http://gist-it.appspot.com/https://github.com/wendyjan/learn_python/tree/master/gdi_buffalo_2015/class2/functions_continued.py?slice=11:13"></script>
-      <script src="http://gist-it.appspot.com/https://github.com/wendyjan/learn_python/tree/master/gdi_buffalo_2015/class2/functions_continued.py?slice=39:41"></script>
+      <p>Here's the "driver" code, aka code that uses a function and will run when we run the file.
+        If you write functions and don't include any "driver code" along the leftmost indentation level
+        (or in an "if __name__ == '__main__'" block), nothing will happen at all when you run the file.
+        So here is the all-important driver!
+      <script src="http://gist-it.appspot.com/https://github.com/wendyjan/learn_python/tree/master/gdi_buffalo_2015/class2/functions_continued.py?slice=35:41"></script>
       <h3>Return Values</h3>
       <p>Now let's talk about getting a value back from a function, or "returning" something from a function.
         A basic example goes like this:
       </p>
-
       <script src="http://gist-it.appspot.com/https://github.com/wendyjan/learn_python/tree/master/gdi_buffalo_2015/class2/functions_continued.py?slice=15:17"></script>
       <script src="http://gist-it.appspot.com/https://github.com/wendyjan/learn_python/tree/master/gdi_buffalo_2015/class2/functions_continued.py?slice=42:45"></script>
+      <p>So using the "return" keyword, followed by a value, will return that value.
+      <br>Now here's an example with 3 parameters-- notice that order matters!</p>
       <script src="http://gist-it.appspot.com/https://github.com/wendyjan/learn_python/tree/master/gdi_buffalo_2015/class2/functions_continued.py?slice=19:21"></script>
       <script src="http://gist-it.appspot.com/https://github.com/wendyjan/learn_python/tree/master/gdi_buffalo_2015/class2/functions_continued.py?slice=60:64"></script>
-      <p>So using the "return" keyword, followed by a value, will return that value.
-      <br>But what if we don't return any value explicitly? No "return" keyword at all?
-      Comment out the last line of the function with the "return" keyword, and replace it with a print statement.
+      <p>
+      <br><br>But what if we don't return any value explicitly? No "return" keyword at all?
+      Comment out the last line of a function with the "return" keyword.
       Find out what happens. A value is still returned!
       </p>
       <h3>Variable Scope</h3>
@@ -55,10 +60,12 @@
       <p>Python has some neat syntax that lets us pass in an unknown number of parameters.
       We use *args to represent some arguments, and they can change without rewriting the function!
       Pretty neat.</p>
+      <script src="http://gist-it.appspot.com/https://github.com/wendyjan/learn_python/tree/master/gdi_buffalo_2015/class2/functions_continued.py?slice=23:28"></script>
       <script src="http://gist-it.appspot.com/https://github.com/wendyjan/learn_python/tree/master/gdi_buffalo_2015/class2/functions_continued.py?slice=65:68"></script>
       <h3>Your Turn!</h3>
       <p>Take a look at this function, and the code that would like to use it.
       Fix it!</p>
+      <script src="http://gist-it.appspot.com/https://github.com/wendyjan/learn_python/tree/master/gdi_buffalo_2015/class2/functions_continued.py?slice=30:33"></script>
       <script src="http://gist-it.appspot.com/https://github.com/wendyjan/learn_python/tree/master/gdi_buffalo_2015/class2/functions_continued.py?slice=69:74"></script>
       <h3>Extra Credit</h3>
       <p>There is a simple way to give a default value for arguments when you define a function,
