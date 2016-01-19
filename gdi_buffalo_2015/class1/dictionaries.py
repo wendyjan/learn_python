@@ -10,6 +10,7 @@ if __name__ == "__main__":
     # Each pair of (key, value) items is connected with a colon.
     my_dict = { "Wendy": "Jansson", "Joe": "Jones", "Clara": "Rodriquez"}
     print my_dict
+    print my_dict["Wendy"]
     
     # Add a new person to our dictionary.
     my_dict["Carey"] = "Forester"
@@ -17,10 +18,8 @@ if __name__ == "__main__":
     print my_dict
     
     # Can we store two different Claras?
-    print my_dict["Joe"]
-    my_dict["Clara"] = "Wu"
+    my_dict["Clara"] = "Wu"    # Remember up above we already said "Clara": "Rodriguez"!
     print my_dict["Clara"]
-
 
     #print my_dict["Anne"] # Comment this line out unless you want an error!
 
