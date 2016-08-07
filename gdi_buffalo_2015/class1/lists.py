@@ -54,7 +54,6 @@ if __name__ == "__main__":
     print range(1, 6, 2)
     print range(5, 0, -1)
 
-    print '\n'
     print "Copying a list!"
     list_a = range(10)
     print "list_a:", list_a
@@ -65,15 +64,20 @@ if __name__ == "__main__":
     list_b[0] = 200
     print "list_b is now:", list_b
     print "and list_a is:", list_a
+    list_c = list_a[:]
+    list_c[0] = 33
+    print list_c, list_a
 
-    print '\n'
-    print "List Methods!"
-    print "list_a is still", list_a
-    list_a.append(35)
-    print list_a
-    list_a.reverse() 
-    print list_a
-    list_a.remove(1)
-    print list_a
-    print list_a.pop()
-    print list_a 
+    fruit_list = ['apple','orange','pear']
+    fruit_list.append('cherry')	
+    print fruit_list
+    fruit_list[4] = 'peach'	#error, cannot append with assignment in lists (can in dictionaries)
+    fruit_list[2] = 'peach'	# okay, replaces item
+    print fruit_list
+    fruit_list.insert(
+    print fruit_list
+    fruit_list.remove('apple')
+    del fruit_list[3]
+    print fruit_list
+    print fruit_list.pop()
+    print fruit_list
