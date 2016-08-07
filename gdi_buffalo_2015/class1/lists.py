@@ -64,6 +64,7 @@ if __name__ == "__main__":
     list_b[0] = 200
     print "list_b is now:", list_b
     print "and list_a is:", list_a
+    
     list_c = list_a[:]
     list_c[0] = 33
     print list_c, list_a
@@ -74,7 +75,7 @@ if __name__ == "__main__":
     fruit_list[4] = 'peach'	#error, cannot append with assignment in lists (can in dictionaries)
     fruit_list[2] = 'peach'	# okay, replaces item
     print fruit_list
-    fruit_list.insert(
+    fruit_list.insert(1,'mango')
     print fruit_list
     fruit_list.remove('apple')
     del fruit_list[3]
