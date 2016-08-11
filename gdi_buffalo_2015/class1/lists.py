@@ -15,9 +15,9 @@ if __name__ == "__main__":
     
     print '\n'
     print "List indexing!"
-    print "The first element in my list is:", my_list[0]
-    print "The last element in my list is:", my_list[-1]
-    print "The length of my list is:", len(my_list)
+    my_list[0]
+    my_list[-1]
+    my_list[1:5]
     # TODO Print the second-to-last element in the array.
 
     print '\n'
@@ -50,9 +50,9 @@ if __name__ == "__main__":
     print range(5)
     for i in range(5):
         print i
-    print range(1, 6, 1)
-    print range(1, 6, 2)
-    print range(5, 0, -1)
+    range(1, 6, 1)
+    range(1, 6, 2)
+    range(5, 0, -1)
 
     print "Copying a list!"
     list_a = range(10)
